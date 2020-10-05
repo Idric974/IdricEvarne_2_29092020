@@ -1,0 +1,247 @@
+/* couleur =  bleu #0065FC // bleu claire #DEEBFF // gris #F2F2F2 */
+
+* {
+    font-family : 'Raleway', sans-serif;
+    } 
+ 
+h1 {
+     font-size: 1.5em;
+    }  
+    
+h2 {
+    font-size: 1.4em;
+    }  
+
+h3 {
+    font-size: 1.3em;
+    }  
+
+
+.header_1 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    }
+
+
+.header_1 a { 
+    color: #0065FC;
+    text-decoration: none; 
+    font-size: 1.6em;
+    font-weight: bold;
+
+    }
+
+
+.header_2 {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin: 0px -10px 20px -10px;
+    }
+
+
+.header_2 a { 
+    border-bottom-style: solid;
+    border-color:#F2F2F2 ;
+    border-width:5px;
+    padding-bottom: 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.6em;
+    font-weight: bold; 
+
+    }
+
+.active, .activites {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+}     
+
+   
+.menu div a.active {        
+    font-weight: bolder;
+    color: #0065FC;
+    font-size: 1.6em;
+    border-bottom-style: solid;
+    border-color:#0065FC ;
+    } 
+
+.menu div:nth-child(3), .menu div:nth-child(4) {
+    border-bottom-style: solid;
+    border-color:#ccc;
+    }
+
+
+@media screen and (min-width: 999px) {
+    .menu div:nth-child(2) {
+    order:4; 
+    }
+    }
+
+
+@media screen and (min-width: 999px) {
+    .menu div:nth-child(3), .menu div:nth-child(4) {
+    border-bottom-style: none;
+    }
+    }
+
+
+
+/********** Slogan **********/
+.slogan {
+    font-size: 1.2em;
+    }
+
+
+/********** Filtre Ville **********/
+.filtre {
+    display: flex;
+    align-items: center;
+    }
+
+
+.icon_carte {
+    background-color: #F2F2F2;
+    border-radius: 20% 0% 0% 20%;
+    padding: 10px;
+}
+
+
+Input {
+    border-color: #F2F2F2;
+    border-width:3px;
+    height:30px;
+    width: 280px;
+    margin: 0px -10px 0px 0px;
+    }
+
+
+#nom::placeholder{
+    color: black;
+    font-weight: bold;
+    padding-left: 10px;
+    }
+
+.bouton_rechercher {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 30%;
+    padding: 10px;  
+    }
+
+.nom_filtre {
+    font-size: 1.2em;
+    font-weight: bold;
+}   
+
+
+/********** Boutons Filtre **********/
+
+.filtres_liens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    }
+
+
+.bouton {
+    background: transparent;
+    border: 0.125rem solid #F2F2F2;
+    border-radius: 2.0rem;
+    width: auto;
+    padding: 10px 10px 10px 50px;
+    margin-left: -42px;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-width:3px;
+    margin-bottom: 15px;
+    }
+
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    padding: 0.9em;
+    margin-right: -10px;
+    width: 17px;
+    height: 17px;
+    }
+
+/********** Point info **********/
+.info {
+    display: flex;
+    align-items: center;  
+}
+    
+.fa-info {
+    color: #0065FC;
+    background-color: white;
+    border: 0.2rem solid #F2F2F2;
+    border-radius: 100%;
+    padding: 0.9em;
+    width: 2px;
+    height: 2px;
+    
+    
+    }  
+
+.i_info {
+    margin-left: 10px;
+    font-size: 1.0em;
+    
+}    
+    
+    
+
+
+/********** Section les_resultats**********/
+
+.populaires {
+    padding-top: 50px;
+}
+
+
+
+.les_resultats {
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    
+    
+}
+
+
+.box_image_populaires {
+    display: flex;
+    align-items: center; 
+    background-color: white;
+    margin: 10px;
+    border-radius: 30px;
+    height: auto;
+    
+    
+}
+
+
+.image_gauche {
+    width: 100px;
+    height:100px;
+    border-radius: 30px 0px 00px 30px;
+    margin: 5px 5px 5px 5px;
+}
+
+.nom_hotel {
+    font-weight: bold;
+}
+
+
+.fa-star {
+    color: #0065FC;
+    font-size: 12px; 
+}
+
