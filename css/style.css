@@ -177,25 +177,22 @@ Input {
 .info {
     display: flex;
     align-items: center;  
-}
+    padding-bottom: 20px;
+    }
     
 .fa-info {
     color: #0065FC;
     background-color: white;
     border: 0.2rem solid #F2F2F2;
     border-radius: 100%;
-    padding: 0.9em;
-    width: 2px;
-    height: 2px;
-    padding-top: -50px;
-    
-    
+    width: 6px;
+    height: 0px;
+    padding: 5px 10px 20px 10px;
     }  
 
 .i_info {
     margin-left: 10px;
     font-size: 1.0em;
-    
     }    
     
     
@@ -203,22 +200,23 @@ Input {
 
 /********** Section Populaires**********/
 
-.titre_resultats {
+.titre {
     display: flex;
     align-items: center;
-    justify-content: space-between;  
-}
-
-
-.populaires {
-    padding-top: 50px;
-    margin: 10px;
+    justify-content: space-between;
+    margin : 10px 20px 10px 10px  
     }
 
 
-.les_resultats {
+.fa-chart-line {
+    font-size: 1.9em; 
+    }
+
+
+.les_plus_populaires {
     background-color: #F2F2F2;
-    margin: -10px;
+    margin: 0px -10px 0px -10px;
+    padding-bottom: 10px;
     }
 
 
@@ -226,8 +224,8 @@ Input {
     display: flex;
     align-items: center; 
     background-color: white;
-    margin: 10px;
-    border-radius: 30px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
     height: auto;
     }
 
@@ -235,14 +233,14 @@ Input {
 .image_gauche {
     width: 100px;
     height:100px;
-    border-radius: 30px 0px 00px 30px;
-    margin: 5px 5px 5px 5px;
+    border-radius: 20px 0px 0px 20px;
+    margin: 5px 5px 2px 5px;
     }
 
 
 .texte_image_gauche {
     margin-left: 10px;
-}    
+    }    
 
 
 .nom_hotel {
@@ -261,4 +259,30 @@ Input {
     font-size: 12px; 
     margin-top: 20px; 
     }
+
+.etoile-2 :nth-child(5) {
+    color: #F2F2F2;
+    font-size: 12px; 
+    margin-top: 20px; 
+}
+
+.etoile-3 :nth-child(5) {
+    color: #F2F2F2;
+    font-size: 12px; 
+    margin-top: 20px; 
+}
+
+
+.image_haut {
+    width: 100%;
+    height:11em;
+    border-radius: 20px 20px 0px 0px;
+    margin: 5px 5px 5px 5px;
+}
+
+
+.prix_herbergement {
+
+}
+
 
