@@ -76,18 +76,22 @@ h3 {
     }
 
 
-@media screen and (min-width: 999px) {
-    .menu div:nth-child(2) {
-    order:4; 
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){ /* valeur tablette*/
+    .menu { 
+        background-color: red;
     }
     }
 
+@media screen and (min-width: 992px) { /* valeur Ordinateur*/
+        .menu { 
+            background-color:green ;
+        }
+        }
 
-@media screen and (min-width: 999px) {
-    .menu div:nth-child(3), .menu div:nth-child(4) {
-    border-bottom-style: none;
-    }
-    }
+
+
 
 
 
@@ -242,7 +246,8 @@ Input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin : 10px 20px 10px 10px;  
+    margin : 10px 20px 10px 10px; 
+     
     }
 
 
@@ -271,6 +276,7 @@ Input {
 
 .texte_image_hebergement_populaires{
     margin-left: 10px;
+    margin-top: 20px;
     }    
 
 
@@ -279,8 +285,7 @@ Input {
 /********** Section herbergement**********/
 
 .section_hebergement {
-    padding-bottom: 10px;
-    
+    padding-bottom: 10px;  
     }
 
 
@@ -327,8 +332,7 @@ Input {
 
 
 .nom_hotel_hebergement {
-    font-weight: bold;
-     
+    font-weight: bold;   
     }
 
 
@@ -379,5 +383,73 @@ Input {
 .afficher {
     padding: 10px 20px 20px 20px;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    }  
+    
+    
+
+/********** Section activites**********/
+
+.section_activites {
+    padding-bottom: 5px;  
+    }
+
+.titre_section_activites {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin : 10px 20px 10px 10px;  
+    }
+
+
+.box_image_activites {
+
+    background-color: white;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    height: auto;
+    box-shadow: 1px 1px 10px 10px #F2F2F2;
+    padding-top: 1px;
+    }  
+    
+
+.image_activites {
+    width: 100%;
+    height:200px;
+    border-radius: 20px 20px 0px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1px;
+    margin-bottom: 0px;
+    }
+
+
+.texte_image_activites{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }   
+
+
+.nom_hotel_activites {
+    font-weight: bold;
+    padding-bottom: 10px;   
+    }    
+
+/********** Section footer**********/
+
+.section_footer {
+    background-color: #F2F2F2;
+    padding-bottom: 10px;
+    margin: 0px -10px 0px -10px;
+}
+
+.a_propos h3, .nos_hebergement h3, .asistance h3 {
+    padding: 40px 10px 10px 40px;
+    margin-bottom: -20px;
+    }
+
+.section_footer li {
+    list-style: none;
 }    
