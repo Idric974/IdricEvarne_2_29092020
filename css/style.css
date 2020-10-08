@@ -16,79 +16,84 @@ h3 {
     font-size: 1.3em;
     }  
 
+a {
+    color: inherit;
+    }    
 
-.header_1 {
+/********** Section header *********/
+
+.menu_1, 
+.menu_2, 
+.menu_1 a, 
+.menu_2 a  {
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
-    }
-
-
-.header_1 a { 
-    color: #0065FC;
-    text-decoration: none; 
-    font-size: 1.6em;
-    font-weight: bold;
-
-    }
-
-
-.header_2 {
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    margin: 0px -10px 20px -10px;
-    }
-
-
-.header_2 a { 
-    border-bottom-style: solid;
-    border-color:#F2F2F2 ;
-    border-width:5px;
-    padding-bottom: 15px;
-    color: black;
+    align-items:center ;
     text-decoration: none;
-    font-size: 1.6em;
-    font-weight: bold; 
+    font-size: 1.1em;
+}
 
-    }
+.menu_1 {
+    justify-content: space-between;
+}
 
-.active, .activites {
-    width: 100%;
-    margin: 0px;
-    text-align: center;
-}     
 
-   
-.menu div a.active {        
-    font-weight: bolder;
+.menu_2 {
+    justify-content: space-around;
+    border-bottom: solid #F2F2F2;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-bottom: 10px;
+}
+
+
+a:active {
+   color: #0065FC;  
+}
+
+
+.logo {
+    width: 120px;
+}
+
+
+.inscription {
+    font-weight: bold;
     color: #0065FC;
-    font-size: 1.6em;
-    border-bottom-style: solid;
-    border-color:#0065FC ;
-    } 
-
-.menu div:nth-child(3), .menu div:nth-child(4) {
-    border-bottom-style: solid;
-    border-color:#ccc;
-    }
+}
 
 
 
 
-@media screen and (min-width: 768px) and (max-width: 991px){ /* valeur tablette*/
-    .menu { 
-        background-color: red;
-    }
-    }
+@media screen and (min-width: 630px) and (max-width: 991px){ /* valeur tablette*/
+    .menu :nth-child(2) {
+        order:3;
+        }
+    .menu {
+        display: flex;
+        justify-content: space-around ;
+    }        
+        }
+
+
+    
 
 @media screen and (min-width: 992px) { /* valeur Ordinateur*/
-        .menu { 
-            background-color:green ;
-        }
-        }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items:center ;
+  }      
+
+    .header :nth-child(2) {
+        order:4;
+        color: red;
+}
+   
+}
+       
+    
+
+
 
 
 
@@ -180,7 +185,7 @@ Input {
 /********** Point info **********/
 .info {
     display: flex;
-    align-items: center;  
+    align-items: baseline;  
     padding-bottom: 20px;
     }
     
@@ -241,6 +246,16 @@ Input {
     padding-bottom: 10px;
     }
 
+@media screen and (min-width: 630px) and (max-width: 991px){ /* valeur tablette*/
+
+    .bloc_populaire {
+        display: flex;
+        justify-content: space-between ;
+        } 
+        } 
+        
+        
+
 
 .titre_section_hebergement_populaires {
     display: flex;
@@ -279,7 +294,23 @@ Input {
     margin-top: 20px;
     }    
 
+    @media screen and (min-width: 630px) and (max-width: 991px){ /* valeur tablette*/
 
+        .box_image_hebergement_populaires {
+            display: block;
+            flex: none;
+            width: 210px;
+            justify-content: space-evenly;
+            
+        } 
+
+
+
+
+
+
+
+        } 
 
 
 /********** Section herbergement**********/
