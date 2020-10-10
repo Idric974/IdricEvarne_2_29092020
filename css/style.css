@@ -2,23 +2,23 @@
 
 * {
     font-family : 'Raleway', sans-serif;
-    } 
+} 
  
 h1 {
      font-size: 1.5em;
-    }  
+}  
     
 h2 {
     font-size: 1.4em;
-    }  
+}  
 
 h3 {
     font-size: 1.3em;
-    }  
+}  
 
 a {
     color: inherit;
-    }    
+}    
 
 /********** Section header *********/
 
@@ -67,12 +67,12 @@ a:active {
 @media screen and (min-width: 630px) and (max-width: 991px){ /* valeur tablette*/
     .menu :nth-child(2) {
         order:3;
-        }
+    }
     .menu {
         display: flex;
         justify-content: space-around ;
     }        
-        }
+}
 
 
     
@@ -82,35 +82,25 @@ a:active {
         display: flex;
         justify-content: space-between;
         align-items:center ;
-  }      
+    }      
 
     .header :nth-child(2) {
         order:4;
         color: red;
-}
-   
+    }  
 }
        
-    
 
-
-
-
-
-
-
-
-/********** Slogan **********/
+/********** Section recherche **********/
 .slogan {
     font-size: 1.2em;
-    }
+}
 
 
-/********** Filtre Ville **********/
 .filtre {
     display: flex;
     align-items: center;
-    }
+}
 
 
 .icon_carte {
@@ -126,21 +116,22 @@ Input {
     height:30px;
     width: 280px;
     margin: 0px -10px 0px 0px;
-    }
+}
 
 
 #nom::placeholder{
     color: black;
     font-weight: bold;
     padding-left: 10px;
-    }
+}
 
 .bouton_rechercher {
     background-color: #0065FC;
     color: white;
     border-radius: 30%;
     padding: 10px;  
-    }
+}
+
 
 .nom_filtre {
     font-size: 1.2em;
@@ -182,6 +173,47 @@ Input {
     height: 17px;
     }
 
+
+@media screen and (min-width: 992px) { /* valeur Ordinateur*/
+    .bouton_filtre {
+        display: flex;
+        align-items: center;    
+    }    
+
+    .mot_filtre {
+        margin: 20px 10px 10px 0px ;
+    }
+
+    .filtres_liens {
+        display: inline-flex;
+        align-items: center;
+        margin: 20px 30px 10px 10px ;
+    }    
+
+    .bouton {
+        border: 0.125rem solid #F2F2F2;
+        border-radius: 2.0rem;
+        width: auto;
+        padding: 10px 10px 10px 50px;
+        margin-left: -42px;
+        font-weight: bold;
+        font-size: 1.1em;
+        border-width:3px;
+        margin-bottom: 0px;
+    }
+
+    .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
+        color: #0065FC;
+        background-color: #DEEBFF;
+        border-radius: 100%;
+        padding: 0.9em;
+        margin: 0px -6px 0px 20px ;
+        width: 17px;
+        height: 17px;
+        
+    }       
+}
+
 /********** Point info **********/
 .info {
     display: flex;
@@ -204,8 +236,6 @@ Input {
     font-size: 1.0em;
     }    
     
-
-
 
 /********** Paramétrage commun section **********/
 .nom_hotel {
@@ -236,6 +266,10 @@ Input {
     font-size: 12px; 
     margin-top: 20px; 
     }
+
+
+
+
 
 
 
@@ -294,23 +328,80 @@ Input {
     margin-top: 20px;
     }    
 
-    @media screen and (min-width: 630px) and (max-width: 991px){ /* valeur tablette*/
+@media screen and (min-width: 630px) and (max-width: 991px){ /* valeur tablette*/
 
-        .box_image_hebergement_populaires {
-            display: block;
-            flex: none;
-            width: 210px;
-            justify-content: space-evenly;
-            
-        } 
+    .box_image_hebergement_populaires {
+        display: block;
+        flex: none;
+        width: 210px;
+        justify-content: space-evenly;     
+    } 
+
+    .image_hebergement_populaires {
+        width: 200px;
+        height:100px;
+        border-radius: 20px 20px 0px 0px;
+        margin: 5px 5px 2px 5px;
+    }
+
+    .bloc_hebergement_populaires {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .section_hebergement_populaires {
+        border-radius: 20px;
+        margin: 0px 5px 0px 5px ;
+    }
+
+
+} 
+
+@media screen and (min-width: 992px) { /* valeur Ordinateur*/
+   
+    .division_herbergement {
+        display: flex;
+        border: solid red 10px;
+        padding: 10px 20px 10px 20px; 
+    }
+   
+    .division_herbergement :nth-child(1){
+    order:2; 
+    }  
+    
+
+    .section_hebergement_populaires {
+        border: solid green 4px;
+    }
+        
+
+    .section_hebergement {
+        border-radius: 20px;
+        width: 63%;
+        background-color: #F2F2F2;
+        border: solid blue 4px;
+    }
+
+
+
+
+    .section_hebergement_populaires {
+        border-radius: 20px;
+        width: 32%;
+        margin: 0px 0px 0px 30px ;
+    }   
+
+
+     .bloc_herbergement {
+         display: flex;
+     }   
 
 
 
 
 
-
-
-        } 
+}
 
 
 /********** Section herbergement**********/
@@ -346,7 +437,7 @@ Input {
 
 .image_hebergement {
     width: 98%;
-    height:200px;
+    height:100px;
     border-radius: 20px 20px 0px 0px;
     display: block;
     margin-left: auto;
@@ -417,56 +508,92 @@ Input {
     font-size: 1.2em;
     }  
     
-    
+@media screen and (min-width: 630px) and (max-width: 991px){ /* valeur tablette*/ 
+    .bloc_hebergement_1,
+    .bloc_hebergement_2,
+    .bloc_hebergement_3
+  {
+        display: flex;
+        margin-left: 5px;
+}  
+
+   .image_hebergement {
+        width: 350px;
+        margin: 5px 5px 5px 5px;
+} 
+}  
 
 /********** Section activites**********/
 
 .section_activites {
     padding-bottom: 5px;  
-    }
+}
+
 
 .titre_section_activites {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin : 10px 20px 10px 10px;  
-    }
+    font-size: 1.4em;
+    font-weight: bold ;
+    margin : 10px 0px 50px 20px;  
+}
+
+    
+.bloc_activites_1 {
+    margin: 10px 10px 10px 10px;
+    
+}    
 
 
 .box_image_activites {
-
-    background-color: white;
-    margin: 10px 10px 10px 10px;
     border-radius: 20px;
     height: auto;
-    box-shadow: 1px 1px 10px 10px #F2F2F2;
-    padding-top: 1px;
-    }  
+}  
     
 
 .image_activites {
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 1px 5px 5px #f1f1f1;
+    margin-bottom: 30px;
+}
+
+.image_activites img {
     width: 100%;
-    height:200px;
+    height:auto;
     border-radius: 20px 20px 0px 0px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: -1px;
     margin-bottom: 0px;
-    }
+    
+}
 
-
-.texte_image_activites{
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    }   
+.image_activites p {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0px 0px 15px 15px ;
+}
 
 
 .nom_hotel_activites {
     font-weight: bold;
     padding-bottom: 10px;   
-    }    
+} 
+    
+    
+@media screen and (min-width: 630px) and (max-width: 991px){ /* valeur tablette*/ 
+    .bloc_activites_1,
+    .bloc_activites_2 {
+        display: flex;
+    }
+
+
+    .tablette_pc_2 {
+    display: flex;
+    }
+}
+
+
+
 
 /********** Section footer**********/
 
@@ -484,3 +611,16 @@ Input {
 .section_footer li {
     list-style: none;
 }    
+
+@media screen and (min-width: 630px) and (max-width: 991px){ /* valeur tablette*/ 
+    .section_footer {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: -20px;
+    }
+
+
+
+
+
+}
