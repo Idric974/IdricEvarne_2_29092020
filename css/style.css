@@ -22,74 +22,133 @@ a {
 
 /********** Section header *********/
 
-.menu_1, 
-.menu_2, 
-.menu_1 a, 
-.menu_2 a  {
-    display: flex;
-    align-items:center ;
+.header a {
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
-.menu_1 {
+
+.header_nav_1 {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-
-.menu_2 {
+.header_nav_2 {
+    display: flex;
     justify-content: space-around;
-    border-bottom: solid #F2F2F2;
-    margin-left: -10px;
-    margin-right: -10px;
-    padding-bottom: 10px;
-}
-
-
-a:active {
-   color: #0065FC;  
+    align-items: center;
 }
 
 
 .logo {
-    width: 120px;
+   width: 50%; 
 }
 
-
-.inscription {
-    font-weight: bold;
-    color: #0065FC;
-}
-
-
-
-
-@media screen and (min-width: 630px) and (max-width: 991px){ /* valeur tablette*/
-    .menu :nth-child(2) {
-        order:3;
-    }
-    .menu {
-        display: flex;
-        justify-content: space-around ;
-    }        
-}
-
-
+.logo:hover {
+    border-bottom: solid #0065FC 4px;
+    width: 50%;
+    margin-left: 0px;
+    padding-left:0px;
+    transition: 0.3s
     
+}
 
-@media screen and (min-width: 992px) { /* valeur Ordinateur*/
+
+
+.inscrition {
+   color: #0065FC;
+   font-weight: bolder;
+   margin-right: 10px;
+   transition: 0.3s;
+   
+}
+
+.inscrition_2 {
+    display: none;
+}
+
+.inscrition:hover {
+    border-bottom: solid #0065FC 4px;
+    width: 50%;
+    margin-left: 88px;
+    padding-left:110px;
+}
+
+
+.herbergement {
+    border-bottom: solid #F2F2F2 4px;
+    width: 50%;
+    text-align: center;
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.activites {
+    border-bottom: solid #F2F2F2 4px;
+    width: 50%;
+    text-align: center;
+    margin-right: -20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+
+.activites:hover, .herbergement:hover  {
+    border-bottom: solid #0065FC 4px;
+    width: 50%;
+    color: #0065FC; 
+    text-align: center;
+    font-weight: bolder;
+    transition: 0.3s
+
+}
+
+
+@media screen and (min-width: 991px) { /* valeur Ordinateur*/
+  
     .header {
         display: flex;
         justify-content: space-between;
-        align-items:center ;
-    }      
+    }
+    
+    .header_nav_2{
+        display: flex;
+        justify-content: space-evenly;
+        width: 35%;
+        
+        
+    }
 
-    .header :nth-child(2) {
-        order:4;
-        color: red;
-    }  
+    .herbergement, 
+    .activites {
+        border-bottom: none;
+        }
+
+    .herbergement {
+        color: #0065FC;
+    }    
+
+    .inscrition {
+        display: none;
+    }
+
+    .inscrition_2 {
+        display: flex;
+        color: #0065FC;
+        margin-top: -10px;
+    }
+
+    .herbergement:hover, 
+    .activites:hover {
+       border-bottom: solid transparent;
+       transition: none;
+    }
+  
 }
-       
+
 
 /********** Section recherche **********/
 .slogan {
@@ -635,7 +694,7 @@ Input {
 }
 
 .a_propos h3, .nos_hebergement h3, .asistance h3 {
-    padding: 40px 10px 10px 40px;
+    padding: 4git 0px 10px 10px 40px;
     margin-bottom: -20px;
     }
 
