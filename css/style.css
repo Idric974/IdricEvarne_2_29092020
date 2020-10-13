@@ -362,8 +362,10 @@ Input {
    
     .division_herbergement {
         display: flex;
+        justify-content: space-between;
         border: solid red 10px;
         padding: 10px 20px 10px 20px; 
+        
     }
    
     .division_herbergement :nth-child(1){
@@ -373,31 +375,40 @@ Input {
 
     .section_hebergement_populaires {
         border: solid green 4px;
+        display: block;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        width: 22%;
+        
+        
+    }
+
+    .titre_section_hebergement_populaires {
+        flex-direction: row-reverse;
+    }
+
+
+    .box_image_hebergement_populaires :nth-child(2) {
+        order:2;
     }
         
 
     .section_hebergement {
         border-radius: 20px;
-        width: 63%;
+        width: 75%;
         background-color: #F2F2F2;
         border: solid blue 4px;
     }
-
-
-
-
-    .section_hebergement_populaires {
-        border-radius: 20px;
-        width: 32%;
-        margin: 0px 0px 0px 30px ;
-    }   
-
+  
 
      .bloc_herbergement {
          display: flex;
      }   
 
-
+     .afficher {
+         margin-top: -10px;
+         margin-bottom: -20px;
+     }
 
 
 
@@ -592,7 +603,27 @@ Input {
     }
 }
 
+@media screen and (min-width: 992px) { /* valeur Ordinateur*/
+    
 
+    .section_activites {
+        border: solid red 4px;
+    }
+
+    .bloc_activites_1 {
+        border: solid green 4px;
+        display: flex;
+        
+    }
+
+    .bloc_activites_2 {
+        border: solid blue 4px;
+    }
+
+
+    .box_image_activites {display: flex;}
+
+}
 
 
 /********** Section footer**********/
