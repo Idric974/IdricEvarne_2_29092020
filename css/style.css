@@ -116,11 +116,6 @@ header {
 
 @media screen and (min-width: 630px) and (max-width: 991px){ /* valeur tablette*/
 
-    .inscrition {
-        display : none;
-    }
-    
-
     
     .header {
         display        : flex;
@@ -137,22 +132,40 @@ header {
         width          : 25%;
     }
 
+
+
     .header_nav_2 {
         display        : flex;
-        justify-content: space-between; 
-        width          : 75%;
+        justify-content: space-around; 
+        width          : 50%;
+        margin-right   : 15%;
+       
     }
 
 
-    .inscrition_2,
+    .inscrition {
+        position: absolute;
+        top: 40px;
+        left: 88%;
+       }
+
+
+       .inscrition:hover {
+        width        : 50%;
+        margin-left  : -88px;
+        padding-left : -84px;
+        
+        
+    } 
+    
     .activites,
     .herbergement {
         display        : flex;
         text-align     : center;
         justify-content: center;
-        border-bottom  : solid #F2F2F2 4px;
-        width          : 25%;
-        padding        : 10px 0px; 
+        border-bottom  : none;
+        
+       
         }
 
 
@@ -161,17 +174,7 @@ header {
         }
 
 
-    .inscrition_2:hover,
-    .activites:hover,
-    .herbergement:hover
-    {
-        display      : flex;
-        text-align   : center;
-        border-bottom: solid #0065FC 4px;
-        width        : 25%;
-        color        : #0065FC;
-        font-weight  : bolder;
-        }
+
 }
 
 
@@ -193,9 +196,9 @@ header {
 
     .header_nav_2 {
         display        : flex;
-        justify-content: space-between; 
-        width          : 35%;
-        margin-right   : 20px;
+        justify-content: space-around; 
+        width          : 19%;
+        margin-right   : 7%;
     }
     
     
@@ -203,7 +206,7 @@ header {
         margin-top: 10px;
     }
     
-
+    .header_nav_2,
     .herbergement, 
     .activites {
         border-bottom: none;
@@ -212,17 +215,6 @@ header {
     .herbergement {
         color: #0065FC;
     }    
-
-    .inscrition {
-        display: none;
-    }
-
-    .inscrition_2 {
-        display   : flex;
-        color     : #0065FC;
-        margin-top: -10px;
-    }
-
 
     
     .herbergement:hover, 
@@ -234,6 +226,19 @@ header {
     .inscrition_2:hover {
         font-weight : bolder;
     }
+
+
+   .inscrition {
+        position: absolute;
+        top:3%;
+        left: 95%;
+
+    }
+
+
+
+
+
   
 }
 
