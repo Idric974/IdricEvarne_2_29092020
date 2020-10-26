@@ -231,11 +231,18 @@ header {
    .inscrition {
         position: absolute;
         top:3%;
-        left: 95%;
+        left: 93%;
+        border: solid red 2px;
 
     }
 
-
+    .inscrition:hover {
+        width        : 50%;
+        margin-left  : -88px;
+        padding-left : -84px;
+        
+        
+    } 
 
 
 
