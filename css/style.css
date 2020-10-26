@@ -153,7 +153,7 @@ header {
        .inscrition:hover {
         width        : 50%;
         margin-left  : -88px;
-        padding-left : -84px;
+        
         
         
     } 
@@ -185,7 +185,7 @@ header {
     .header {
         display        : flex;
         justify-content: space-between;
-        width          : 100ù;
+        width          : 100%;
     }
     
     .header_nav_1 {
@@ -239,9 +239,7 @@ header {
     .inscrition:hover {
         width        : 50%;
         margin-left  : -88px;
-        padding-left : -84px;
-        
-        
+  
     } 
 
 
@@ -983,6 +981,7 @@ cursor: pointer;
     margin: 3px 3px 3px 3px;
 }
 
+
 .texte_image_hebergement{
     margin-left: 20px;
     margin-top: 10px;
@@ -990,7 +989,7 @@ cursor: pointer;
 
 
 .nom_hotel_hebergement {
-    font-size: 1.2;
+    font-size: 1.2em;
     font-weight: bolder;
     margin-top: 5px;
     margin-bottom: 10px;   
@@ -998,7 +997,7 @@ cursor: pointer;
 
 
 .prix_nuit_herbergement {
-    font-size: 1.1;
+    font-size: 1.1em;
     margin-top: -5px;
     margin-bottom: -20px; 
     }    
